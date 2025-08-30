@@ -11,7 +11,44 @@
     "langkah_perbaikan": [
       "Buka TSK dan ambil uang jammed di dalam TSK",
       "Periksa secara visual jalur TSK dan Three Way Gate pada BRM TOP, pastikan tidak ada benda yang menghalangi.",
-      "Inisialisasi brm dan lakukan test cash"
+      "Inisialisasi brm dan lakukan test cash",
+      "Jika sering berulang error TSK dalam periode 2 minggu kebelakang dilihat dari error code lakukan pergantian part pada TSK"
+    ],
+    "tingkat_urgensi": "Rendah"
+  },
+  {
+    "kode_error": "5K7M500",
+    "nama_masalah": "TSK GM701 Stepout saat inisial",
+    "deskripsi": "Motor pada tsk stepout saat inisial",
+    "alur_proses": "Uang masuk atau keluar TSK dan tidak bisa keluar kembali sehingga jammed",
+    "kemungkinan_penyebab": [
+      "Sensor pada modul TSK Kotor atau terhalang debu/kertas.",
+      "Part sudah usang"
+    ],
+    "langkah_perbaikan": [
+      "Buka TSK dan ambil uang jammed di dalam TSK",
+      "Periksa secara visual jalur TSK dan Three Way Gate pada BRM TOP, pastikan tidak ada benda yang menghalangi.",
+      "Inisialisasi brm dan lakukan test cash",
+      "Jika sering berulang error TSK dalam periode 2 minggu kebelakang dilihat dari error code lakukan pergantian part pada TSK"
+    ],
+    "tingkat_urgensi": "Rendah"
+  },
+  {
+    "kode_error": "5D71100",
+    "nama_masalah": "Sensor GS701 dark jam saat inisial",
+    "deskripsi": "Ada sesuatu menghalangi pada sensor GS701 yang ada pada TSK",
+    "alur_proses": "Uang masuk atau keluar TSK dan tidak bisa keluar kembali sehingga jammed",
+    "kemungkinan_penyebab": [
+      "Sensor pada modul TSK Kotor atau terhalang debu/kertas.",
+      "Sensor TSK lemah",
+      "Uang tidak layak, rusak, miring, kotor atau sobek"
+    ],
+    "langkah_perbaikan": [
+      "Buka TSK dan ambil uang jammed di dalam TSK",
+      "Bersihkan sensor pada TSK",
+      "Periksa secara visual jalur TSK dan Three Way Gate pada BRM TOP, pastikan tidak ada benda yang menghalangi.",
+      "Inisialisasi brm dan lakukan test cash",
+      "Jika sering berulang error TSK dalam periode 2 minggu kebelakang dilihat dari error code lakukan pergantian part pada TSK"
     ],
     "tingkat_urgensi": "Rendah"
   },
@@ -29,7 +66,24 @@
       "Buka unit BCU dan lakukan pembersihan pada seluruh area sensor BC menggunakan kuas halus dan blower",
       "Lakukan analisa dengan melihat print counter dan perhatikan reject banyak pada denom berapa, jika cassette belum fatal lakukan disable pada cassette.",
       "Lakukan percobaan accept cash, escrow dan rollback",
-      "Jika masih berulang lakukan pergantian part pada BCU"
+      "Jika sering berulang eror BC dalam periode 2 minggu kebelakang dilihat dari error code lakukan pergantian part pada BC"
+    ],
+    "tingkat_urgensi": "Sedang"
+  },
+  {
+    "kode_error": "570DG00",
+    "nama_masalah": "Reject excess",
+    "deskripsi": "Terjadi kegagalan saat uang yang ditarik melewati modul Bill Checker (BC) setelah divalidasi.",
+    "alur_proses": "Uang dari cassette -> Validasi di BCU -> **Gagal saat melewati sensor di BC** -> dan dianggap uang tidak layak sehingga masuk reject",
+    "kemungkinan_penyebab": [
+      "Sensor pada modul BC kotor",
+      "Uang tidak layak, rusak, miring, kotor atau sobek"
+    ],
+    "langkah_perbaikan": [
+      "Buka unit BCU dan lakukan pembersihan pada seluruh area sensor BC menggunakan kuas halus dan blower",
+      "Bersihkan sensor UV dan sensor magnetic, biasanya terdapat garis kotoran pada sensor UV",
+      "Inisialisasi brm dan lakukan test cash",
+      "Jika sering berulang eror BC dalam periode 2 minggu kebelakang dilihat dari error code lakukan pergantian part pada BC"
     ],
     "tingkat_urgensi": "Sedang"
   },
@@ -44,7 +98,8 @@
     ],
     "langkah_perbaikan": [
       "Lakukan disable pada cassette jika belum terbaca fatal",
-      "Untuk melihat cassette yang mana yang akan di disable, lihat uang yang menyangkut pada cassette berapa"
+      "Untuk melihat cassette yang mana yang akan di disable, lihat uang yang menyangkut pada cassette berapa",
+      "Pasang sticker bad WAJIB"
     ],
     "tingkat_urgensi": "Rendah"
   },
@@ -68,7 +123,7 @@
   {
     "kode_error": "5D0LH00",
     "nama_masalah": "Uang jammed pada bagian CSM bawah",
-    "deskripsi": "Uang jammed pada bagian CSM bawah yang tersangku pada sensor 618",
+    "deskripsi": "Uang jammed pada bagian bawah Cash Slot Module yang tersangkut pada sensor 618",
     "alur_proses": "jika tipe CDM Uang dari cassette -> Validasi di BCU -> CSM -> lalu jammed pada CSM",
     "kemungkinan_penyebab": [
       "bisa karena uang tidak layak, rusak, miring, kotor atau sobek",
@@ -78,8 +133,28 @@
       "Lakukan clear uang jammed pada CSM, dan periksa juga pada BC, TSK, BRM TOP dan MTP",
       "Lakukan analisa dengan melihat print counter dan perhatikan reject banyak pada denom berapa, jika salah satu cassete terdapa reject banyak lakukan disable dan juga perhatikan tanggal replenish terakhir.",
       "Inisialisasi brm dan lakukan test cash",
-      "Jika masih berulang lakukan pergantian part pada CSM"
+      "Jika sering berulang error CSM dalam periode 2 minggu kebelakang dilihat dari error code lakukan pergantian part pada CSM"
     ],
     "tingkat_urgensi": "Sedang"
+  },
+  {
+    "kode_error": "5D0LZ00",
+    "nama_masalah": "Uang jammed pada transport",
+    "deskripsi": "Uang jammed pada transport saat inisial",
+    "alur_proses": "Uang jammed saat inisial",
+    "kemungkinan_penyebab": [
+      "bisa karena uang tidak layak, rusak, miring, kotor atau sobek",
+      "Ada sobekan uang atau benda asing yang menghalangi pada transport",
+      "Sensor pada modul pada transport kotor"
+    ],
+    "langkah_perbaikan": [
+      "Lakukan clear uang jammed pada CSM, BC, TSK, BRM TOP dan MTP",
+      "Lakukan analisa dengan melihat print counter dan jika sudah berulang tanyakan pada Tim lapangan denom berapa yang telah berulang menyangkut pada transport, karena bisa disebabkan oleh kaset",
+      "Inisialisasi brm dan lakukan test cash"
+    ],
+    "tingkat_urgensi": "Sedang"
+  },
+  {
+
   }
 ]
