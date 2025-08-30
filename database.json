@@ -155,6 +155,17 @@
     "tingkat_urgensi": "Sedang"
   },
   {
-
+    "kode_error": "5VAA800",
+    "nama_masalah": "BMD Interlock",
+    "deskripsi": "BMD terbaca masih diluar, interlock tidak terkunci",
+    "alur_proses": "-",
+    "kemungkinan_penyebab": [
+      "-"
+    ],
+    "langkah_perbaikan": [
+      "Lakukan restart mesin",
+      "Jika masih terbaca lakukan insial diluar, ganjal sensor interlock dan tarik sensor pada BMD lakukan inisial setelah berhasil, normalkan kembali"
+    ],
+    "tingkat_urgensi": "Rendah"
   }
 ]
